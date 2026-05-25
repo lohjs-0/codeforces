@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Problemas Escolhidos
+## Problemas Escolhidos
 
 | # | Código | Nome | Dificuldade | Link |
 |---|--------|------|-------------|------|
