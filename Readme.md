@@ -54,7 +54,7 @@ Dado `n`, construir um array de `n` inteiros positivos **distintos** `a[1], a[2]
 
 ---
 
-## 💡 Estratégia de Resolução
+## Estratégia de Resolução
 
 ### 2203B — Beautiful Numbers
 
@@ -92,7 +92,7 @@ Sequência resultante: `2, 1, 3, 6, 12, 24, 48, ...`
 
 ---
 
-## 💻 Linguagem Utilizada
+## Linguagem Utilizada
 
 **Python 3**
 
@@ -104,7 +104,7 @@ Escolhi Python por:
 
 ---
 
-## 🤖 IA Utilizada e Como Ajudou
+## IA Utilizada e Como Ajudou
 
 **IA utilizada: Claude (Anthropic)**
 
@@ -118,7 +118,7 @@ A IA foi essencial em cada etapa, mas sempre como **ferramenta de aprendizado**,
 
 ---
 
-## 🚧 Dificuldades Encontradas
+## Dificuldades Encontradas
 
 - **2203B:** Inicialmente errei a verificação de "bonito" — confundi `F(F(S)) == F(S)` (que é sempre verdade!) com `1 ≤ F(x) ≤ 9`. Precisei debugar para perceber que estava verificando uma camada a mais.
 
@@ -130,7 +130,7 @@ A IA foi essencial em cada etapa, mas sempre como **ferramenta de aprendizado**,
 
 ---
 
-## 📚 O Que Aprendi
+## O Que Aprendi
 
 - **Soma de dígitos como invariante**: propriedades matemáticas simples como "a soma dos dígitos é um ponto fixo de F se e somente se é um único dígito" são poderosas em problemas de teoria dos números.
 
@@ -144,7 +144,7 @@ A IA foi essencial em cada etapa, mas sempre como **ferramenta de aprendizado**,
 
 ---
 
-## 🌟 Experiência Geral
+## Experiência Geral
 
 Foi uma experiência muito mais intensa (e divertida!) do que eu esperava. A competição em programação tem uma lógica própria, os problemas parecem simples, mas escondem pegadinhas matemáticas elegantes.
 
@@ -156,7 +156,7 @@ Foi uma experiência muito mais intensa (e divertida!) do que eu esperava. A com
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 📦 codeforces-challenge
