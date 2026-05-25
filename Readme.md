@@ -64,6 +64,30 @@ O objetivo é **maximizar o número de cadeiras** em que sentamos.
 
 **Exemplo:** Com `p = [2, 1, 3]`, a melhor estratégia resulta em sentar em 2 cadeiras.
 
+### Código
+```python
+import sys
+input = sys.stdin.readline
+
+def solve():
+    x = input().strip()
+    S = sum(int(c) for c in x)
+    if S <= 9:
+        print(0)
+        return
+    cuts = sorted([int(c) - (1 if i == 0 else 0) for i, c in enumerate(x)], reverse=True)
+    moves = 0
+    for r in cuts:
+        if S <= 9:
+            break
+        S -= r
+        moves += 1
+    print(moves)
+
+for _ in range(int(input())):
+    solve()
+```
+
 ---
 
 ### 3. 2218D — The 67th OEIS Problem
@@ -75,6 +99,30 @@ Dado `n`, construir um array de `n` inteiros positivos **distintos** `a[1], a[2]
 - `1 | 3` ✓
 - `3 | 6` ✓
 - `6 | 12` ✓
+
+### Código
+```python
+import sys
+input = sys.stdin.readline
+
+def solve():
+    x = input().strip()
+    S = sum(int(c) for c in x)
+    if S <= 9:
+        print(0)
+        return
+    cuts = sorted([int(c) - (1 if i == 0 else 0) for i, c in enumerate(x)], reverse=True)
+    moves = 0
+    for r in cuts:
+        if S <= 9:
+            break
+        S -= r
+        moves += 1
+    print(moves)
+
+for _ in range(int(input())):
+    solve()
+```
 
 ---
 
