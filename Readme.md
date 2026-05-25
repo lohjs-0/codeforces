@@ -24,6 +24,11 @@ Em um movimento, podemos trocar qualquer dígito do número por outro (sem criar
 
 **Exemplo:** `x = 19` → `F(19) = 10`, `F(10) = 1`. Como `F(F(19)) = 1 ≠ 10 = F(19)`, não é bonito. Trocando o `9` por `0`, temos `10` → `F(10) = 1`, que é bonito. Resposta: **1 movimento**.
 
+### Código
+```python
+# Cole seu código aqui
+```
+
 ---
 
 ### 2. 2210B — Simply Sitting on Chairs
