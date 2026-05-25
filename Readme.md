@@ -1,4 +1,4 @@
-# Desafio Codeforces
+# Desafio Codeforces — Mentoria Codificadas | Além do Código
 
 > Repositório criado como parte do desafio da mentoria: escolher problemas do Codeforces, resolvê-los com apoio de IA e documentar a jornada de aprendizado.
 
