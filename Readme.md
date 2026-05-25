@@ -106,20 +106,18 @@ Dado `n`, construir um array de `n` inteiros positivos **distintos** `a[1], a[2]
 import sys
 input = sys.stdin.readline
 
+N = 1_500_000
+sieve = bytearray([1]) * (N + 1)
+sieve[0] = sieve[1] = 0
+for i in range(2, int(N**0.5) + 1):
+    if sieve[i]:
+        sieve[i*i::i] = bytearray(len(sieve[i*i::i]))
+primes = [i for i in range(2, N + 1) if sieve[i]]
+del sieve
+
 def solve():
-    x = input().strip()
-    S = sum(int(c) for c in x)
-    if S <= 9:
-        print(0)
-        return
-    cuts = sorted([int(c) - (1 if i == 0 else 0) for i, c in enumerate(x)], reverse=True)
-    moves = 0
-    for r in cuts:
-        if S <= 9:
-            break
-        S -= r
-        moves += 1
-    print(moves)
+    n = int(input())
+    print(*[primes[i] * primes[i+1] for i in range(n)])
 
 for _ in range(int(input())):
     solve()
