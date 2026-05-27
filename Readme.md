@@ -191,7 +191,7 @@ A IA foi essencial em cada etapa, mas sempre como **ferramenta de aprendizado**,
 
 ## Dificuldades Encontradas
 
-- **2203B:** Inicialmente errei a verificação de "bonito" — confundi `F(F(S)) == F(S)` (que é sempre verdade!) com `1 ≤ F(x) ≤ 9`. Precisei debugar para perceber que estava verificando uma camada a mais.
+- **2203B:** Inicialmente errei a verificação de "bonito", confundi `F(F(S)) == F(S)` (que é sempre verdade!) com `1 ≤ F(x) ≤ 9`. Precisei debugar para perceber que estava verificando uma camada a mais.
 
 - **2210B:** O bug mais sutil: ao atualizar `right_count`, usei `pos_of[k] <= k` quando o correto é `pos_of[k] < k`. O elemento `i = k` recém-adicionado nunca esteve no `right_count` antes, então não pode ser removido no mesmo passo.
 
